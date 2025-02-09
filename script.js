@@ -44,7 +44,7 @@ medium : [
     },
     {
         imageUrl: "med5.jpg", // Replace with actual image URL
-        answer: "NEELAKASHAM PACHAKADAL CHUVANNA BHOOMI ",
+        answer: "NEELAKASHAM PACHAKADAL CHUVANNA BHOOMI",
     },
     
 ],
