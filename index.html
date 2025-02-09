@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>MOVIE GUESSING GAME</title>
+</head>
+<body>
+<header class="header">
+    
+    <nav class="navbar">
+        <div class="nav-links">
+           <a href="#home">Home</a>
+           <a href="#rules">Rules</a>
+           <a href="#game">Play Game</a>
+    </div>
+    </nav>
+    
+</header>
+<!--home section code-->
+<section id ="home" class="home">
+    <div class="home-content">
+        <h1>
+            DIALOG DIVE
+        </h1>
+        <h3>Lights...Camera...Guess...!</h3>
+        <img class =" home-img"src="home-img.jpg">
+   </div>
+   
+</section>
+
+<!--rule section code-->
+<section id="rules" class="rules">
+<div class="container">
+    <h4>Game Rules</h4>
+    <ul class="rules-list">
+        <li>Select your preferred difficulty level: Easy, Medium, or Hard.</li>
+                <li>Read the movie quote carefully.</li>
+                <li>You have 1 attempt to guess each movie correctly.</li>
+                <li>Score 10 points for each correct answer.</li>
+                <li>Try to complete all quotes in your chosen difficulty level.</li>
+                <li>The game ends when you've gone through all quotes or want to try a different level.</li>
+                <li>All the letters of movie guesses must be in capital</li> 
+                <li>Correct spelling must be given</li>
+    
+    </ul>
+
+    
+</div>
+</section>
+
+<!--game section code-->
+<section id="game" class = "game">
+        <div class="container">
+            <h2>Movie Quote Quest</h2>
+            <div class="game-container">
+                <h2>Select Difficulty</h2>
+                <div class="level-selection">
+                    <button class="level-btn" onclick="setLevel('easy')">Easy</button>
+                    <button class="level-btn" onclick="setLevel('medium')">Medium</button>
+                    <button class="level-btn" onclick="setLevel('hard')">Hard</button>
+                </div>
+                <div id="gameArea" style="display: none;">
+                    <div id="quote">
+                        <img id="quoteImage" class="quote-image" alt="Movie quote" src="" style="display: none;">
+                    </div>
+                    <input type="text" id="guess" placeholder="Enter movie name..." style="width: 300px; font-size:  18px; padding: 8px;">
+                    <button class="submit-btn" onclick="checkAnswer()">Submit Guess</button>
+                    <div class="score" id="score">Score: 0</div>
+                    <div class="feedback" id="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+</body>
+</html>
